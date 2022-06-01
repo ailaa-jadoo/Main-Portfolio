@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
+
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    padding: 10px 10px 50px 10px;
+}
+
+li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+h1 {
+    font-size: 200px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    margin: 3px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 50px
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    /* vh - viewport height*/
+    margin-top: 17vh;
+    text-align: center;
+}
+
+.light-text {
+    font-weight: 100;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    padding: 30px;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    margin: 40px 10px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.socials {
+    width: 110px;
+    height: 320px;
+    /* background-color: #00ffff; */
+    background-color: #00f5d4;
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 27vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .socials {
+        display: none;
+    }
+
+    h1 {
+        font-size: 160px;
+    }
+}
+
+.social img {
+    padding: 10px;
+    width: 72%;
+    height: 33%;
+}
+
+svg path {
+    animation: oceanWave 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes oceanWave {
+    0% {
+        d: path("M0,192 C20,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
+    }
+
+    25% {
+        d: path("M0,100 C220,100,440,292,660,292 C880,292,1100,100,1320,100 L1320 500 L0 500");
+    }
+
+    50% {
+        d: path("M0,192 C220,290,440,290,660,192 C880,100,1100,100,1320,192 L1320 500 L0 500");
+    }
+
+    75% {
+        d: path("M0,292 C220,292,440,100,660,100 C880,100,1100,292,1320,292 L1320 500 L0 500");
+    }
+
+    100% {
+        d: path("M0,192 C20,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
+    }
+}
+
+.waves {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+a:hover {
+    color: #00f5d4;
+}
+
+/* work page */
+
+.work-details {
+    width: 50%;
+}
+
+.work-details td {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .work-details {
+        width: 80%;
+    }
+
+    .work-details td {
+        padding: 5px;
+    }
+}
+
+.sub-pages-footer {
+    position: fixed;
+}
+
+.work-sub-pages-footer {
+    position: relative;
+}
+
+/* About me */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me div {
+    padding-top: 40px;
+    width: 50vw;
+    text-align: center;
+}
+
+.about-me img {
+    padding-top: 20px;
+    height: 22%;
+    width: 22%;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about-me div {
+        width: 85vw;
+    }
+
+    .about-me img {
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .sub-pages-footer {
+        position: relative;
+    }
+}
+
+/* contact page */
+.form-submit {
+    width: 50vw;
+}
+
+.form-submit form {
+    width: 100vw;
+}
+
+.form-submit h2 {
+    padding-bottom: 20px
+}
+
+.form-submit .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-control {
+    width: 50%;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 0;
+}
+
+.form-row .form-control:focus,
+.form-submit textarea:focus {
+    outline: 0;
+    background-color: rgb(184, 195, 196);
+}
+
+.form-submit textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    border: none;
+    padding: 0;
+    resize: none;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+form button {
+    width: 100%;
+    background-color: rgb(79, 177, 79);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-submit {
+        width: 80%;
+        padding: 0 40px;
+    }
+
+    .form-submit .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row .form-control {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .sub-pages-footer {
+        position: relative;
+    }
+}
